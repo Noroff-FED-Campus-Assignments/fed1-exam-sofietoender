@@ -1,0 +1,102 @@
+video {
+    width: 100%;
+    outline: none;
+    opacity: 0.7;
+    
+}
+
+source {
+    width:100%;
+    outline: none;
+    height: 100%;
+
+}
+
+.video-container {
+    display:flex;
+    align-items: flex-end;
+    background: black;
+    width: 100%; 
+}
+
+.videoembed {
+    padding-top:50px;
+}
+/* Husk å endre fra yoga til reise relatert*/
+
+.heading-headertext,.header-para {
+    color:#212427;
+}
+.yoga-girl-img {
+    width: 100%;
+}
+.yoga-section {
+    padding-top:150px;
+}
+
+.yoga-section {
+    padding-top:150px;
+   
+    
+}
+.yoga-section-para{
+    font-family: var(--second-font);
+    line-height: 30px;
+    margin-top:10px;
+}
+.yoga-section-heading{
+    font-size: 2em;
+}
+.yoga-section-text {
+    display:flex;
+    flex-direction: column;
+  padding: 30px;
+  padding-bottom:120px;
+    background:#fee4d3;
+    gap:10px;
+}
+.heading-headertext {
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin: 15px;
+    text-transform: uppercase;
+}
+.header-para{
+    font-family: var(--second-font);
+    line-height: 30px;
+    margin: 15px;
+}
+
+@media (min-width: 992px) {
+    .header-section {
+        display:flex;
+        flex-direction: row;
+   }
+    .header-img {
+        width: 500px;
+   }
+
+   .yoga-section {
+    display:flex;
+    flex-direction: row;
+}
+.yoga-girl-img {
+    width: 500px;
+}
+}
+@media (min-width: 1200px) {
+
+    .event-containars {
+        display:flex;
+        
+        justify-content: center;
+        gap:35px;
+        
+   }
+
+   .join-us-text {
+font-size: 3em;
+   }
+}
+

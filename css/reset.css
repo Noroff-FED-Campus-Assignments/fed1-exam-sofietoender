@@ -1,3 +1,4 @@
+
 /*!
  * Reset
  * makes browsers render all elements more consistently and in line with modern standards.
@@ -5,7 +6,7 @@
  * @example https://fed-vocational-astro-course.vercel.app/en/html-css/module-3/css-grids
  */
 
-:root {
+ :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 300;

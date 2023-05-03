@@ -10,32 +10,138 @@
       content="HTML, CSS, JavaScript, _REPLACE_WITH_KEYWORD_"
     />
     <meta name="author" content="_YOUR_NAME_" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog-card.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- TODO: Import Javascript -->
+    <script
+      src="https://kit.fontawesome.com/170b674e86.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/nav.js" defer></script>
     <title>_REPLACE_SITE_NAME</title>
   </head>
   <body class="animate__animated animate__fadeIn">
-    <header class="l-header">
-      <h1>Home</h1>
+    <header>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">TravelAdventures</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-links">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+          <li>
+            <a href="blog.html" class="nav-links">Blog</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="l-main">
       <section role="search"></section>
+      <div class="video-container">
+        <video class="videoembed" autoplay muted loop>
+          <source src="movie-travel-homepage.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-      <article role="doc-introduction">
-        <h2>List</h2>
+      <section>
+        <div class="container-blogs">
+          <div class="card-blog">
+            <div class="card__header-blog">
+              <img
+                src="assets/card-photo.png"
+                alt="card__image"
+                class="card__image-blog"
+                width="600"
+                height="200"
+              />
+            </div>
+            <div class="card__body-blog">
+              <span class="tag-blog tag-blue-blog">Activity</span>
+              <h4>Heading</h4>
+            </div>
+            <div class="card__footer-blog">
+              <div class="user-blog">
+                <div class="user__info-blog"></div>
+                <button>Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-blog">
+            <div class="card__header-blog">
+              <img
+                src="assets/card-photo.png"
+                alt="card__image"
+                class="card__image-blog"
+                width="600"
+                height="200"
+              />
+            </div>
+            <div class="card__body-blog">
+              <span class="tag-blog tag-blue-blog">Activity</span>
+              <h4>Heading</h4>
+            </div>
+            <div class="card__footer-blog">
+              <div class="icons-blog">
+                <div class="icons__clock">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>4min</p>
+                </div>
 
-        <img
-          src="/placeholder.jpg"
-          loading="lazy"
-          alt="…"
-          class="u-img hero-image"
-          width="1024"
-          height="1024"
-        />
+                <div class="icons__comment">
+                  <i class="fa-regular fa-comment"></i>
+                  <p>6</p>
+                </div>
+              </div>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <p>HEIHEIHEI</p>
-      </article>
+      <section>
+        <div class="yoga-section">
+          <img
+            src="assets/"
+            alt="girl doing a yoga position"
+            class="yoga-girl-img"
+          />
+          <div class="yoga-section-text">
+            <h2 class="yoga-section-heading">
+              Discover the Life-Changing Benefits of Yoga
+            </h2>
+            <p class="yoga-section-para">
+              Yoga can transform your mind, body, and soul. With regular
+              practice, you can improve your flexibility, strength, and balance,
+              reduce stress and anxiety, and boost your overall well-being.
+              Whether you're a beginner or experienced practitioner, yoga is
+              accessible to people of all ages and fitness levels. Join the
+              millions of people who have already discovered the life-changing
+              benefits of yoga, and take the first step towards a healthier,
+              happier, and more fulfilled life.
+            </p>
+            <div>
+              <button class="header-btn eggplant">Get started</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section role="list">
         <div id="js-list-container">_LOADING_INDICATOR_GOES_HERE_</div>
@@ -43,7 +149,7 @@
     </main>
 
     <footer class="l-footer">
-      <small>Created with ❤️ by _REPLACE_</small>
+      <small>Created with ❤️ by Sofie Tønder</small>
     </footer>
   </body>
 </html>
