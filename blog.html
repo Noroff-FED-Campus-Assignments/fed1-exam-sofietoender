@@ -12,6 +12,8 @@
     <meta name="author" content="_YOUR_NAME_" />
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/blog.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -24,7 +26,9 @@
       src="https://kit.fontawesome.com/170b674e86.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="js/blog.js" defer></script>
     <script type="module" src="js/nav.js" defer></script>
+
     <title>_REPLACE_SITE_NAME</title>
   </head>
   <body class="animate__animated animate__fadeIn">
@@ -53,36 +57,50 @@
 
     <main class="l-main">
       <section role="search"></section>
-      <div class="video-container">
-        <video class="videoembed" autoplay muted loop>
-          <source src="movie-travel-homepage.mp4" type="video/mp4" />
 
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <article role="doc-introduction">
-        <h2>List</h2>
-
-        <img
-          src="/placeholder.jpg"
-          loading="lazy"
-          alt="…"
-          class="u-img hero-image"
-          width="1024"
-          height="1024"
-        />
-
-        <p>HEIHEIHEI</p>
-      </article>
+      <div class="posts-container" id="posts-container"></div>
 
       <section role="list">
         <div id="js-list-container">_LOADING_INDICATOR_GOES_HERE_</div>
       </section>
     </main>
 
-    <footer class="l-footer">
-      <small>Created with ❤️ by Sofie Tønder</small>
-    </footer>
+    <section class="footer-section">
+      <footer class="top">
+        <div class="links">
+          <div>
+            <h2>Tema</h2>
+            <a>text</a>
+            <a>text</a>
+            <a>text</a>
+            <a>text</a>
+            <a>text</a>
+            <a>text</a>
+          </div>
+          <div>
+            <h2>Tema</h2>
+            <a>text</a>
+            <a>text</a>
+            <a>text</a>
+            <a>text</a>
+            <a>text</a>
+            <a>text</a>
+          </div>
+        </div>
+      </footer>
+      <footer class="bottom">
+        <div class="legal">
+          <span> © 2023 All rights reserved </span>
+          <a> License </a>
+          <a> Terms </a>
+          <a> Privacy </a>
+        </div>
+        <div class="links">
+          <a class="fa-brands fa-youtube"></a>
+          <a class="fa-brands fa-instagram"></a>
+          <a class="fa-brands fa-facebook"></a>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>

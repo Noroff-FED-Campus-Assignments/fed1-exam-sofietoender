@@ -1,23 +1,19 @@
+
+
 video {
     width: 100%;
     outline: none;
-    opacity: 0.7;
-    
+    opacity: 0.8;  
+    background:black;
 }
 
 source {
     width:100%;
     outline: none;
     height: 100%;
-
 }
 
-.video-container {
-    display:flex;
-    align-items: flex-end;
-    background: black;
-    width: 100%; 
-}
+
 
 .videoembed {
     padding-top:50px;
@@ -52,7 +48,7 @@ source {
     flex-direction: column;
   padding: 30px;
   padding-bottom:120px;
-    background:#fee4d3;
+    background:#50BFA0;
     gap:10px;
 }
 .heading-headertext {
@@ -99,4 +95,7 @@ source {
 font-size: 3em;
    }
 }
+
+/**/
+
 
