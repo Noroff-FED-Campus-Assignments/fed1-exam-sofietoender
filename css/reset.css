@@ -1,12 +1,12 @@
-
-/*!
+/* 
+!
  * Reset
  * makes browsers render all elements more consistently and in line with modern standards.
  * @tutorial https://web.dev/learn/css/layout/
  * @example https://fed-vocational-astro-course.vercel.app/en/html-css/module-3/css-grids
  */
 
- :root {
+ /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 300;
@@ -75,4 +75,4 @@ input {
   :where(:not(:active):focus-visible) {
     transition-duration: 0.25s;
   }
-}
+} */
