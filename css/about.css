@@ -55,6 +55,10 @@ p {
 
 .our-team {
     font-family: var(--main-font);
+    text-align: center;
+    font-size: 70px;
+    color:white;
+    padding-top:50px;
    
 }
 
@@ -65,13 +69,14 @@ p {
 }
 
 .team-card {
-    border-radius:20px;
+    border-radius:10px;
 
     display:flex;
     flex-direction: column;
     width: 400px;
    overflow: hidden;
    margin:20px;
+   
    
 }
 
@@ -81,16 +86,21 @@ p {
     gap:20px;
     justify-content: center;
   padding:50px;
+    
+}
+
+.team-members {
     background-color: #266867;
-    border-radius: 20px;;
 }
 
 .team-details {
     background:white;
+    padding:15px 30px 30px;
 }
 
 .team-member-photo {
-   
+    height: 300px;
+    object-fit: cover;
 }
 
 
