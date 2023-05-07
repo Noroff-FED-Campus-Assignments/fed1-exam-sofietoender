@@ -1,0 +1,38 @@
+:root {
+    --main-font:'Playfair Display', serif;
+    --second-font: 'Montserrat', sans-serif;
+}
+
+.blog-post {
+    padding:200px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top:50px;
+}
+
+h1 {
+    font-family: var(--main-font);
+    padding-top:80px;
+    text-align: center;
+}
+
+p,li {
+font-family: var(--second-font);
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin:20px;
+}
+
+
+.wp-block-image {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

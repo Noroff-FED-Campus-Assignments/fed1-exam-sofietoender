@@ -6,8 +6,9 @@
  * @example https://fed-vocational-astro-course.vercel.app/en/html-css/module-3/css-grids
  */
 
- /* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ :root {
+  --second-font:'Lato', sans-serif;
+  --main-font: 'Playfair Display', serif;
   line-height: 1.5;
   font-weight: 300;
   font-synthesis: none;
@@ -53,6 +54,18 @@ h4,
 h5,
 h6 {
   margin: 0;
+  
+}
+
+p {
+  font-family: var(--second-font);
+
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-weight: 600;
+  
 }
 
 img {
@@ -75,4 +88,4 @@ input {
   :where(:not(:active):focus-visible) {
     transition-duration: 0.25s;
   }
-} */
+}

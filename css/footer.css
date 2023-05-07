@@ -1,10 +1,8 @@
 .footer-section {
     width: 100%;
-    background: #FEFBF4;
+    background: #051821;
     padding-top: 60px;
   }
-  
-
   
   footer {
     display: flex;
@@ -37,11 +35,11 @@
   }
   
   footer {
-    color: #573544;
+    color: #FFFFFF;
   }
   
   footer.top {
-    border-bottom: 2px solid #573544;;
+    border-bottom: 2px solid #FFFFFF;
     padding-bottom: 20px;
   }
   

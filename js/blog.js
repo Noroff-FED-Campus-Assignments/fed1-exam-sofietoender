@@ -6,22 +6,49 @@ async function getPosts() {
   } catch (error) {
     console.error(error);
   }
-} 
+}
+
+async function getMedia(mediaId) {
+  try {
+    const response = await fetch(`https://sofie-exam.flywheelsites.com/?rest_route=/wp/v2/media/${mediaId}`);
+    const media = await response.json();
+    return media;
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 async function displayPosts() {
   const posts = await getPosts();
   const postsContainer = document.getElementById('posts-container');
 
-  posts.forEach(post => {
-      const postDiv = document.createElement('div');
-      const author = getAuthorName(post.id);
-      const postLink = `blog-details.html?id=${post.id}`;
-      postDiv.innerHTML += `<a href="${postLink}"><div class="blog-post-card"><p>By ${author} on ${new Date(post.date).toLocaleDateString()}</p><h2>${post.title.rendered}</h2><p>${post.excerpt.rendered}</p><div class="button-div"><button class="header-btn eggplant">Read more</button></div></div></a>`;
-      postsContainer.appendChild(postDiv);
-      
-    });
-  }
-
+  posts.forEach(async post => {
+    const postDiv = document.createElement('div');
+    const author = getAuthorName(post.id);
+    
+    const postLink = `blog-details.html?id=${post.id}`;
+    const media = await getMedia(post.featured_media);
+    const imageUrl = media?.source_url || '';
+    
+    postDiv.innerHTML += `<a href="${postLink}">
+      <div class="blog-post-card">
+        <div class="image-container">
+          <img src="${imageUrl}" alt="${post.title.rendered}">
+        </div>
+        <div class="content-container">
+          <p class="meta">${new Date(post.date).toLocaleDateString()}</p>
+          <h2 class="title">${post.title.rendered}</h2>
+          <p class="excerpt">${post.excerpt.rendered}</p>
+          <div class="button-div">
+            <button class="header-btn eggplant">Read more</button>
+          </div>
+        </div>
+      </div>
+    </a>`;
+    
+    postsContainer.appendChild(postDiv);
+  });
+}
 function getAuthorName(postId) {
   switch (postId) {
     case 1:
