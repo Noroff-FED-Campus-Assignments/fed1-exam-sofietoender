@@ -12,6 +12,7 @@
     <meta name="author" content="_YOUR_NAME_" />
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +35,7 @@
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fas fa-bars"></i>
         </span>
-        <a href="#" class="logo">TravelAdventures</a>
+        <a href="index.html" class="logo">TravelAdventures</a>
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="index.html" class="nav-links">Home</a>
@@ -53,54 +54,77 @@
     </header>
 
     <main class="l-main">
-      <section role="search"></section>
-      <div class="video-container">
-        <video class="videoembed" autoplay muted loop>
-          <source src="movie-travel-homepage.mp4" type="video/mp4" />
-
-          Your browser does not support the video tag.
-        </video>
+      <div class="container-header-contact">
+        <img src="assets/train.jpg" alt="" class="header-photo-train" />
+        <h1 class="contact-us-text">Contact us</h1>
       </div>
+      <div></div>
+      <div>
+        <p>
+          We love hearing from our readers and fellow adventure-seekers. Whether
+          you have a question, a suggestion, or just want to say hello, feel
+          free to reach out to us. You can use the contact form below to send us
+          a message. We'll do our best to respond as soon as possible. Also,
+          don't forget to follow us on social media to stay up-to-date on all of
+          our latest posts and adventures. Thanks for visiting our blog and
+          happy travels!
+        </p>
+      </div>
+      <div class="container">
+        <h2 class="contact-text">Love to hear from you, Get in touch 👋</h2>
+        <form id="js-form">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+          <p class="error-container" id="js-name-error"></p>
 
-      <article role="doc-introduction">
-        <h2>List</h2>
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+          <p class="error-container" id="js-lname-error"></p>
 
-        <img
-          src="/placeholder.jpg"
-          loading="lazy"
-          alt="…"
-          class="u-img hero-image"
-          width="1024"
-          height="1024"
-        />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+          />
+          <p class="error-container" id="js-email-error"></p>
 
-        <p>HEIHEIHEI</p>
-      </article>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+          <p class="error-container" id="js-message-error"></p>
 
-      <section role="list">
-        <div id="js-list-container">_LOADING_INDICATOR_GOES_HERE_</div>
-      </section>
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </div>
     </main>
 
     <section class="footer-section">
       <footer class="top">
-        <img src="logo.svg" />
+        <h3>TravelAdventures</h3>
         <div class="links">
           <div>
             <h2>Tema</h2>
-            <a>text</a>
-            <a>text</a>
-            <a>text</a>
-            <a>text</a>
-            <a>text</a>
-            <a>text</a>
+            <a>About</a>
+            <a>Contact</a>
           </div>
           <div>
             <h2>Tema</h2>
-            <a>text</a>
-            <a>text</a>
-            <a>text</a>
-            <a>text</a>
             <a>text</a>
             <a>text</a>
           </div>
@@ -109,9 +133,6 @@
       <footer class="bottom">
         <div class="legal">
           <span> © 2023 All rights reserved </span>
-          <a> License </a>
-          <a> Terms </a>
-          <a> Privacy </a>
         </div>
         <div class="links">
           <a class="fa-brands fa-youtube"></a>

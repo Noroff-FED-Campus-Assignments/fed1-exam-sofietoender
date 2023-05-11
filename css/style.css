@@ -1,3 +1,4 @@
+
 body {
     background:#ECEFF1;
 }
@@ -18,25 +19,32 @@ source {
     display:flex;
     justify-content: center;
     position: relative;
+    flex-direction: column;
     height:300px;
-    top:20px;
-    color:#ECEFF1;
-    font-weight:900;
-    font-size: 1.5em;
-    padding:30px;
-    
+   color:#FFF;
+   top:-20px;
+   padding:30px;
+}
 
+.heading {
+    font-size: 2em;
+}
+
+.text {
+    display:none;
 }
 
 .videoembed {
     position: relative;
     top:-260px;
     z-index: -10;
+
+}
+.video-container {
+    height: 10px;
 }
 
-.video-container {
-    height:10px;
-}
+
 /* Husk å endre fra yoga til reise relatert*/
 
 .heading-headertext,.header-para {
@@ -63,7 +71,7 @@ source {
     font-size: 2em;
 }
 .yoga-section-text {
-    background:#50BFA0;
+    background:#1B8C7B;
     display:flex;
     flex-direction: column;
     gap:10px;
@@ -131,6 +139,11 @@ source {
     font-size: 30px;
     padding:100px;
  }
+
+ .text {
+    display:block;
+    font-size: 0.5em;
+}
 }
 @media (min-width: 1200px) {
 
@@ -143,15 +156,26 @@ source {
    }
 
    .join-us-text {
-font-size: 3em;
+font-size: 1.6em;
  }
 
  .heading-video {
     top:100px;
+    font-size: 3em;
  }
+
+ .text {
+    font-size: 0.4em;
+    padding-top:10px;
+    text-align: center;
+}
 
  
 }
+
+
+ 
+  
 
 /**/
 

@@ -53,6 +53,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
+
+  footer h3 {
+    color:#FE9442;
+  }
   
   .links > div {
     display: grid;
