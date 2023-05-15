@@ -1,10 +1,12 @@
 let currentPage = 1;
-const postsPerPage = 5;
+const postsPerPage = 3;
 let posts = [];
+
+//
 
 async function getPosts() {
   try {
-    const response = await fetch('https://sofie-exam.flywheelsites.com/?rest_route=/wp/v2/posts');
+    const response = await fetch('https://sofie-exam.flywheelsites.com/?rest_route=/wp/v2/posts&per_page=12');
     posts = await response.json();
     // sort the posts based on date
     posts.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -16,7 +18,7 @@ async function getPosts() {
 
 async function getMedia(mediaId) {
   try {
-    const response = await fetch(`https://sofie-exam.flywheelsites.com/?rest_route=/wp/v2/media/${mediaId}`);
+    const response = await fetch(`https://sofie-exam.flywheelsites.com/?rest_route=/wp/v2/media/${mediaId}&per_page=12`);
     const media = await response.json();
     return media;
   } catch (error) {
@@ -48,7 +50,7 @@ function displayPosts() {
           <h2 class="title">${post.title.rendered}</h2>
           <p class="excerpt">${post.excerpt.rendered}</p>
           <div class="button-div">
-            <button class="header-btn eggplant">Read more</button>
+            <button class="blog-button">Read more <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
       </div>

@@ -16,12 +16,24 @@ html {
     padding:0;
    }
 
+   :root {
+    --second-font:'Lato', sans-serif;
+    --main-font: 'Playfair Display', serif;
+    line-height: 1.5;
+    font-weight: 300;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
   /* Link to navbar hamburger menu source: https://codepen.io/Sukhjinder-arora/pen/OZGomv*/
 
 
   .navbar {
     font-size: 18px;
-    background:  #FFFFFF;
+    background:  #F27F3D;
     /* border: 1px solid rgba(0, 0, 0, 0.2); */
     padding-bottom: 10px;
     position: fixed;
@@ -40,7 +52,7 @@ html {
   .nav-links,
   .logo {
     text-decoration: none;
-    color: #F27F3D;
+    color: #FFFFFF;
     font-family: var(--second-font);
   }
   

@@ -17,6 +17,10 @@ h1 {
     text-align: center;
 }
 
+#details-content {
+    padding:70px;
+}
+
 p,li {
 font-family: var(--second-font);
 }
@@ -35,4 +39,10 @@ li {
     display:flex;
     justify-content: center;
     margin-bottom: 20px;
+    
 }
+
+img {
+    border-radius: 15px;
+}
+
