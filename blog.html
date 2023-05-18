@@ -11,6 +11,7 @@
     />
     <meta name="author" content="_YOUR_NAME_" />
     <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/loader.css" />
 
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/blog.css" />
@@ -61,12 +62,11 @@
 
       <div class="posts-container" id="posts-container"></div>
 
-      <section role="list">
-        <div id="js-list-container">_LOADING_INDICATOR_GOES_HERE_</div>
-      </section>
-
       <div id="posts-container"></div>
-      <button id="load-more-btn">Load More</button>
+      <button class="load-more-btn" id="load-more-btn">Load More</button>
+      <section role="list">
+        <div id="loader"></div>
+      </section>
     </main>
 
     <section class="footer-section">

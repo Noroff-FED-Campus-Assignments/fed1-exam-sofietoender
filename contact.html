@@ -27,6 +27,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="js/nav.js" defer></script>
+    <script type="module" src="js/contact.js" defer></script>
     <title>_REPLACE_SITE_NAME</title>
   </head>
   <body class="animate__animated animate__fadeIn">
@@ -56,10 +57,10 @@
     <main class="l-main">
       <div class="container-header-contact">
         <img src="assets/train.jpg" alt="" class="header-photo-train" />
-        <h1 class="contact-us-text">CONTACT US</h1>
       </div>
 
-      <div>
+      <div class="contact-info">
+        <h1 class="contact-us-text">CONTACT US</h1>
         <p class="contact-para">
           We love hearing from our readers and fellow adventure-seekers. Whether
           you have a question, a suggestion, or just want to say hello, feel
@@ -70,6 +71,7 @@
           happy travels!
         </p>
       </div>
+
       <div class="container">
         <h2 class="contact-text">Love to hear from you, Get in touch 👋</h2>
         <form id="js-form">
@@ -103,7 +105,7 @@
           <label for="message">Message</label>
           <textarea
             id="message"
-            name="subject"
+            name="message"
             placeholder="Write something.."
             style="height: 200px"
           ></textarea>

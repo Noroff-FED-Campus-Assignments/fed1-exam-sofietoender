@@ -1,5 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/EF97x2Z3)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10988055&assignment_repo_type=AssignmentRepo)
+
 # FED Exam - Vanilla Front-end Website
 
 This bootstrap template is intended to help you deliever a amazing website which delights your end-users. Feel free to change, remove or start your own project from scratch. Please replace any text which starts with an `_`.
@@ -42,7 +43,7 @@ In the project directory, you can run:
 
 All of these todo's must be done to pass the asssignment.
 
-- [ ] A error message is present when the End-user encounters a error while viewing the index page.
+- [] A error message is present when the End-user encounters a error while viewing the index page.
 - [ ] A error message is present when the End-user encounters a error while viewing the details page.
 - [ ] As a customer I can view the title of the item on the browser tab for a details page.
 - [ ] As a customer I can view validation message when they input an incorrect name.
