@@ -37,6 +37,9 @@ video {
 
 .text {
     display: none;
+    
+        
+
 }
 
 
@@ -118,7 +121,10 @@ font-size: 30px;
 
  .text {
     display:block;
-    font-size: 0.5em;
+    font-size: 1em;
+    font-family: var(--second-font);
+    font-weight: 400;
+    text-align: center;
 }
 
 .travel-section-text {
@@ -140,14 +146,6 @@ font-size: 30px;
 .join-us-text {
 font-size: 1.6em;
  }
-
-
- .text {
-    font-size: 0.6em;
-    padding-top:10px;
-    text-align: center;
-  
-}
 
 }
 

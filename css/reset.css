@@ -32,6 +32,10 @@ html {
   box-sizing: inherit;
 }
 
+p {
+  font-family: var(--second-font);
+}
+
 a {
   color: #FFFFFF;
   text-decoration: inherit;
