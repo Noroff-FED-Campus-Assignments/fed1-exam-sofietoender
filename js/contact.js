@@ -121,10 +121,10 @@ addressEl.addEventListener("blur", (event) => {
 subjectEl.addEventListener("blur", (event) => {
   const subject = event.target.value.trim();
 
-  const minLengthRegex = /^[a-zA-Z0-9_ ]{10,}/g;
+  const minLengthRegex = /^[a-zA-Z0-9_ ]{15,}/g;
 
   if (!minLengthRegex.test(subject)) {
-    subjectError.innerHTML = "Subject must be at least 10 characters long";
+    subjectError.innerHTML = "Subject must be at least 15 characters long";
   } else {
     subjectError.innerHTML = "";
   }
