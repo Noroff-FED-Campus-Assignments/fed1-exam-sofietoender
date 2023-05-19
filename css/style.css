@@ -48,7 +48,7 @@ video {
 }
 .travel-girl-img {
     width: 100%;
-    
+    object-fit: cover;
     
 }
 .travel-section {
@@ -56,6 +56,7 @@ video {
     border-radius:20px;
     width: 100%;
     overflow: hidden;
+    background: #1B8C7B;
     
 }
 .travel-section-para{
@@ -69,12 +70,12 @@ video {
     color:white;
 }
 .travel-section-text {
-    background:#1B8C7B;
+    
     display:flex;
     flex-direction: column;
+    padding:30px;
+
     
-    padding-bottom:120px;
-    padding: 30px;
 }
 
 .travel-explore {
@@ -130,7 +131,7 @@ font-size: 30px;
 
 .travel-section-text {
     
-    padding: 60px;
+    padding: 40px;
     justify-content: center;
 }
 
