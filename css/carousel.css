@@ -1,0 +1,127 @@
+.swiper-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+  
+  .swiper-wrapper {
+    width: 400px;
+  }
+  
+  .carousel-item {
+    display: none;
+  }
+  
+  .image-post-latest {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background:red;
+  }
+  
+  .swiper-slide-active {
+    will-change: 300px;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .swiper-pagination {
+bottom: auto;
+  top: auto;
+  left: auto;
+  width: auto;
+  max-width: none;
+  display: block;
+  justify-content: initial;
+  margin-top: 0;
+  position: initial;
+  text-align: initial;
+  transition: initial;
+  transform: initial;
+  z-index: initial;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin to create space between items and pagination */
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: blueviolet;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+
+  .swiper-button-next,
+.swiper-button-prev {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    transition: none;
+  }
+  
+.buttons-prev-next {
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    top:10px;
+}
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+     color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1; /* Add this line to ensure the buttons appear above other elements */
+    color:black;
+  }
+
+  
+  
+
+
+   
+  
+  @media (max-width: 600px) {
+    .carousel-container {
+      max-width: 100%;
+    }
+  }
+  

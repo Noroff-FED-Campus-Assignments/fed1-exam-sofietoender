@@ -2,7 +2,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const url = `https://sofie-exam.flywheelsites.com/?rest_route=/wp/v2/posts/${id}`;
+const url = `https://sofie-exam.flywheelsites.com/wp-json/wp/v2/posts/${id}`;
 
 const detailsHeader = document.getElementById("details-header");
 const detailsContent = document.getElementById("details-content");

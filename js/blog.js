@@ -1,5 +1,5 @@
 let currentPage = 1;
-const postsPerPage = 10;
+const postsPerPage = 3;
 let posts = [];
 const loader = document.querySelector("#loader");
 
@@ -29,6 +29,7 @@ async function getMedia(mediaId) {
   } catch (error) {
     console.error(error);
   }
+
  
 }
 function displayPosts() {
