@@ -27,7 +27,7 @@ fetch('https://sofie-exam.flywheelsites.com/wp-json/wp/v2/posts/')
 
     // Initialize the Swiper carousel
     new Swiper('.swiper-container', {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 10,
       pagination: {
         el: '.swiper-pagination',
