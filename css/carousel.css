@@ -15,6 +15,7 @@
   
   .swiper-wrapper {
     width: 400px;
+    gap:15px;
   }
   
   .carousel-item {
@@ -51,6 +52,7 @@
     background:white;
     border-radius:15px;
     
+    
   }
   
   .swiper-slide-active {
@@ -72,6 +74,9 @@
     color:#FE9442;
 
   }
+
+
+
   
   .swiper-pagination {
 bottom: auto;
