@@ -14,8 +14,8 @@ fetch('https://sofie-exam.flywheelsites.com/wp-json/wp/v2/posts/')
             // Create slide with post title, image, and read more button
             const slide = document.createElement('div');
             slide.classList.add('swiper-slide');
-            slide.innerHTML = `
-            <img src="${media.source_url}" alt="${post.title.rendered}" class="image-post-latest">
+            slide.innerHTML = `<div class=carousel-images>
+            <img src="${media.source_url}" alt="${post.title.rendered}" class="image-post-latest"></div>
               <h2 class="header-slider">${post.title.rendered} </h2>
               <a href="blog-details.html?id=${post.id}" class="read-more">Read More</a>
             `;
