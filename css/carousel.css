@@ -65,6 +65,12 @@
     padding:10px;
     font-family: var(--second-font);
     color:#000;
+    font-weight: 400;
+  }
+
+  .read-more:hover {
+    color:#FE9442;
+
   }
   
   .swiper-pagination {
