@@ -48,21 +48,13 @@
     justify-content: space-between;
   }
   
-  footer.top .links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
+
 
   footer h3 {
     color:#FE9442;
   }
   
-  .links > div {
-    display: grid;
-    gap: 10px;
-    margin-bottom: 30px;
-  }
+  
   
   footer h2 {
     margin: 0;
@@ -98,9 +90,7 @@
       align-items: center;
     }
   
-    footer.top .links {
-      grid-template-columns: 1fr;
-    }
+    
   
     footer.bottom {
       align-items: center;
