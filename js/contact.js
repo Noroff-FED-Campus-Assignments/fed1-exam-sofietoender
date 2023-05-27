@@ -1,5 +1,5 @@
 const formEl = document.querySelector("#js-form");
-const nameEl = document.querySelector("#fname");
+const nameEl = document.querySelector("#name");
 
 
 const emailEl = document.querySelector("#email");
