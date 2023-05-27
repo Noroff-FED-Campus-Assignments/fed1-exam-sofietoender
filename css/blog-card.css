@@ -1,0 +1,65 @@
+.container-blogs {
+    display:flex;
+    gap:40px;
+    flex-wrap: wrap;
+
+}
+.card-blog {
+display: flex;
+  flex-direction: column;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 6px;
+  background:#fffaf4;
+}
+
+.blog-cards-button {
+    font-size: 15px;
+    display:flex;
+    align-items: center;
+    border:none;
+    padding:10px;
+}
+
+.card__image-blog {
+    width: 100%;
+}
+
+.icons-blog {
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.icons__clock,.icons__comment {
+    display:flex;
+    gap:5px; 
+    align-items: center;
+}
+
+
+
+.fa-comment,.fa-regular {
+    display:flex;
+    align-items: center;
+
+}
+
+.card__footer-blog {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-container {
+    display:flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+

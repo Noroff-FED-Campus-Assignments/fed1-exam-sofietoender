@@ -1,0 +1,166 @@
+
+body {
+    background:#ECEFF1;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+.heading-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    background-color: rgba(33, 36, 39, 0.4);
+    width: 100%;
+    height: 99%;
+    padding: 20px;
+    
+}
+
+.heading {
+    font-size: 2em;
+    text-align: center;
+  
+}
+
+.text {
+    display: none;
+    
+        
+
+}
+
+
+.heading-headertext,.header-para {
+    color:#212427;
+}
+.travel-girl-img {
+    width: 100%;
+    object-fit: cover;
+    
+}
+.travel-section {
+    
+    border-radius:20px;
+    width: 100%;
+    overflow: hidden;
+    background: #1B8C7B;
+    
+}
+.travel-section-para{
+    font-family: var(--second-font);
+    line-height: 30px;
+    color:white;
+    font-weight: 400;
+}
+.travel-section-heading{
+    font-size: 2em;
+    color:white;
+}
+.travel-section-text {
+    
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+
+    
+}
+
+.travel-explore {
+    padding:50px;
+}
+.heading-headertext {
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin: 15px;
+    text-transform: uppercase;
+}
+.header-para{
+    font-family: var(--second-font);
+    line-height: 30px;
+    margin: 15px;
+}
+
+.heading-video  {
+    
+    font-size: 15px;
+}
+
+
+
+
+  
+ 
+@media (min-width: 992px) {
+    .header-section {
+        display:flex;
+        flex-direction: row;
+   }
+
+   .heading-video {
+    font-size: 30px;
+}
+   
+
+   .travel-section {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.heading-video {
+font-size: 30px;
+  
+ }
+
+ .text {
+    display:block;
+    font-size: 1em;
+    font-family: var(--second-font);
+    font-weight: 400;
+    text-align: center;
+}
+
+.travel-section-text {
+    
+    padding: 40px;
+    justify-content: center;
+}
+
+
+}
+@media (min-width: 1200px) {
+
+    .event-containars {
+        display:flex;
+        justify-content: center;
+        gap:35px;   
+   }
+
+.join-us-text {
+font-size: 1.6em;
+ }
+
+}
+
+
+
+ 
+  
+
+  
+  
+  

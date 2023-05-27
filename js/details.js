@@ -1,46 +1,77 @@
-/*
-============================================
-Constants
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/games.html#L66
-============================================
-*/
+const queryString = document.location.search;
+    const params = new URLSearchParams(queryString);
+    const id = params.get("id");
 
-// TODO: Get DOM elements from the DOM
+    const url = `https://sofie-exam.flywheelsites.com/wp-json/wp/v2/posts/${id}`;
 
-// TODO: Get the query parameter from the URL
+    const detailsHeader = document.getElementById("details-header");
+    const detailsContent = document.getElementById("details-content");
 
-// TODO: Get the id from the query parameter
+    async function fetchBlogDetails() {
+      try {
+        const response = await fetch(url);
+        const blogDetails = await response.json();
+        document.title = blogDetails.title.rendered + "| TravelAdventures";
 
-// TODO: Create a new URL with the id @example: https://www.youtube.com/shorts/ps7EkRaRMzs
+        showBlogDetails(blogDetails);
+      } catch (error) {
+        console.log(error);
+      }
+    }
 
-/*
-============================================
-DOM manipulation
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/games.html#L89
-============================================
-*/
+    async function fetchFeaturedMedia(featuredMediaId) {
+      try {
+        const mediaUrl = `https://sofie-exam.flywheelsites.com/wp-json/wp/v2/media/${featuredMediaId}`;
+        const response = await fetch(mediaUrl);
+        const mediaDetails = await response.json();
+        const imageSrc = mediaDetails.source_url;
+        return imageSrc;
+      } catch (error) {
+        console.log(error);
+        return null;
+      }
+    }
 
-// TODO: Fetch and Render the list to the DOM
+    async function showBlogDetails(blogDetails) {
+      const title = blogDetails.title.rendered;
+      const content = blogDetails.content.rendered;
 
-// TODO: Create event listeners for the filters and the search
+      detailsHeader.innerHTML = `<h1>${title}</h1>`;
+      detailsContent.innerHTML = `${content}`;
 
-/*
-============================================
-Data fectching
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/games.html#L104
-============================================
-*/
+      const images = document.getElementsByClassName("wp-block-image");
+      for (let i = 0; i < images.length; i++) {
+        const featuredMediaId = blogDetails.featured_media;
+        const imageSrc = await fetchFeaturedMedia(featuredMediaId);
+        if (imageSrc) {
+          images[i].addEventListener("click", () => {
+            createModal(imageSrc);
+          });
+        }
+      }
+    }
 
-// TODO: Fetch an a single of objects from the API
+    function createModal(imageSrc) {
+      const modal = document.createElement("div");
+      modal.classList.add("modal");
 
-/*
-============================================
-Helper functions
-============================================
-*/
+      const modalContent = document.createElement("div");
+      modalContent.classList.add("modal-content");
 
-/**
- * TODO: Create a function to create a DOM element.
- * @example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/src/js/detail.js#L36
- * @param {item} item The object with properties from the fetched JSON data.
- */
+      const modalImage = document.createElement("img");
+      modalImage.src = imageSrc;
+
+      const closeButton = document.createElement("span");
+      closeButton.innerHTML = "&times;";
+      closeButton.classList.add("close-button");
+      closeButton.addEventListener("click", () => {
+        document.body.removeChild(modal);
+      });
+
+      modalContent.appendChild(modalImage);
+      modalContent.appendChild(closeButton);
+      modal.appendChild(modalContent);
+      document.body.appendChild(modal);
+    }
+
+    fetchBlogDetails();

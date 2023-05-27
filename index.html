@@ -4,46 +4,153 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="_REPLACE_WITH_DESCRIPTION_" />
+    <meta
+      name="description"
+      content="Explore breathtaking destinations, thrilling adventures, and unforgettable experiences with our travel blog. Get inspired and plan your next active tour with expert tips and insights. Discover the world of active travel today!"
+    />
     <meta
       name="keywords"
-      content="HTML, CSS, JavaScript, _REPLACE_WITH_KEYWORD_"
+      content="travel blog, active travel, adventure, destinations, experiences, tips, insights"
     />
-    <meta name="author" content="_YOUR_NAME_" />
-    <link rel="stylesheet" href="/style.css" />
+
+    <meta name="author" content="Sofie Tønder" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/blog-card.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- TODO: Import Javascript -->
-    <title>_REPLACE_SITE_NAME</title>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="js/app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/170b674e86.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/nav.js" defer></script>
+    <title>TravelAdventures</title>
+    <!-- Hotjar Tracking Code for Travel Adventures -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3505453, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body class="animate__animated animate__fadeIn">
-    <header class="l-header">
-      <h1>Home</h1>
+    <header>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo">TravelAdventures</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-links">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+          <li>
+            <a href="blog.html" class="nav-links">Blog</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="l-main">
-      <section role="search"></section>
+      <div class="video-container">
+        <video class="videoembed" autoplay muted loop>
+          <source src="video-header.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="heading-video">
+          <h1 class="heading">Discover. Explore. Thrive.</h1>
+          <p class="text">
+            Discover the world's most exhilarating destinations and activities
+            with our expert guides and insider tips
+          </p>
+        </div>
+      </div>
 
-      <article role="doc-introduction">
-        <h2>List</h2>
+      <section class="carousel">
+        <h2>Our latest post</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper" id="carousel-wrapper"></div>
 
-        <img
-          src="/placeholder.jpg"
-          loading="lazy"
-          alt="…"
-          class="u-img hero-image"
-          width="1024"
-          height="1024"
-        />
+          <div class="buttons-prev-next">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-        <p>_REPLACE_INTRODUCTION_</p>
-      </article>
-
-      <section role="list">
-        <div id="js-list-container">_LOADING_INDICATOR_GOES_HERE_</div>
+      <section class="travel-explore">
+        <div class="travel-section">
+          <img
+            src="assets/girl-hiking.jpg"
+            alt="girl standing on a rock"
+            class="travel-girl-img"
+          />
+          <div class="travel-section-text">
+            <h2 class="travel-section-heading">
+              Get Ready to Explore: Your Ultimate Guide to Active Travels
+            </h2>
+            <p class="travel-section-para">
+              Are you tired of the same old beach vacations and tourist traps?
+              Do you crave adventure and a chance to explore the world in a more
+              active way? Look no further than our Active Travel Blog! Our team
+              of experienced travelers and outdoor enthusiasts are here to
+              provide you with all the tips, tricks, and inspiration you need to
+              plan your next adventure.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="l-footer">
-      <small>Created with ❤️ by _REPLACE_</small>
-    </footer>
+    <section class="footer-section">
+      <footer class="top">
+        <h3>TravelAdventures</h3>
+      </footer>
+      <footer class="bottom">
+        <div class="legal">
+          <span> © 2023 All rights reserved </span>
+        </div>
+        <div class="links">
+          <a class="fa-brands fa-youtube"></a>
+          <a class="fa-brands fa-instagram"></a>
+          <a class="fa-brands fa-facebook"></a>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>

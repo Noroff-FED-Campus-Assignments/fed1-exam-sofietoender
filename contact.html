@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact our team for inquiries, feedback, or any questions regarding our travel blog and active tours. Fill out the form and we'll get back to you as soon as possible. Connect with us today!" />
+    <meta name="keywords" content="contact page, inquiries, feedback, questions, travel blog, active tours" />
+    <meta name="author" content="Sofie Tønder" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TODO: Import Javascript -->
+    <script
+      src="https://kit.fontawesome.com/170b674e86.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/nav.js" defer></script>
+    <script type="module" src="js/contact.js" defer></script>
+    <title>TravelAdventures
+    </title>
+    <!-- Hotjar Tracking Code for Travel Adventures -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3505453, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body class="animate__animated animate__fadeIn">
+    <header>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo">TravelAdventures</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-links">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+          <li>
+            <a href="blog.html" class="nav-links">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <div class="container-header-contact">
+        <img src="assets/train.jpg" alt="Girl on a moving train" class="header-photo-train" />
+      </div>
+
+      <div class="contact-info">
+        <h1 class="contact-us-text">CONTACT US</h1>
+        <p class="contact-para">
+          We love hearing from our readers and fellow adventure-seekers. Whether
+          you have a question, a suggestion, or just want to say hello, feel
+          free to reach out to us. You can use the contact form below to send us
+          a message. We'll do our best to respond as soon as possible. Also,
+          don't forget to follow us on social media to stay up-to-date on all of
+          our latest posts and adventures. Thanks for visiting our blog and
+          happy travels!
+        </p>
+      </div>
+
+      <div class="container">
+        <h2 class="contact-text">Love to hear from you, Get in touch 👋</h2>
+        <form autocomplete="on" id="js-form">
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+          />
+          <p class="error-container" id="js-name-error"></p>
+
+        
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+          />
+          <p class="error-container" id="js-email-error"></p>
+
+         
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Your subject"
+          />
+          <p class="error-container" id="js-subject-error"></p>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+          <p class="error-container" id="js-message-error"></p>
+
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <section class="footer-section">
+      <footer class="top">
+        <h3>TravelAdventures</h3>
+      </footer>
+      <footer class="bottom">
+        <div class="legal">
+          <span> © 2023 All rights reserved </span>
+        </div>
+        <div class="links">
+          <a class="fa-brands fa-youtube"></a>
+          <a class="fa-brands fa-instagram"></a>
+          <a class="fa-brands fa-facebook"></a>
+        </div>
+      </footer>
+    </section>
+    </section>
+  </body>
+</html>

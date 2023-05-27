@@ -1,53 +1,42 @@
-/*
-============================================
-Constants
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/games.html#L66
-============================================
-*/
 
-// TODO: Get DOM elements from the DOM
+fetch('https://sofie-exam.flywheelsites.com/wp-json/wp/v2/posts/')
+  .then(response => response.json())
+  .then(data => {
+   
+    const carouselWrapper = document.getElementById('carousel-wrapper');
+    data.forEach(post => {
+     
+      if (post.featured_media) {
+      
+        fetch(`https://sofie-exam.flywheelsites.com/wp-json/wp/v2/media/${post.featured_media}`)
+          .then(response => response.json())
+          .then(media => {
+           
+            const slide = document.createElement('div');
+            slide.classList.add('swiper-slide');
+            slide.innerHTML = `<div class=carousel-images>
+            <img src="${media.source_url}" alt="${post.title.rendered}" class="image-post-latest"></div>
+              <h2 class="header-slider">${post.title.rendered} </h2>
+              <a href="blog-details.html?id=${post.id}" class="read-more">Read More</a>
+            `;
+            carouselWrapper.appendChild(slide);
+          })
+          .catch(error => console.log(error));
+      }
+    });
 
-/*
-============================================
-DOM manipulation
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/games.html#L89
-============================================
-*/
-
-// TODO: Fetch and Render the list to the DOM
-
-// TODO: Create event listeners for the filters and the search
-
-/**
- * TODO: Create an event listener to sort the list.
- * @example https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/search-form.html#L91
- */
-
-/*
-============================================
-Data fectching
-@example: https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/games.html#L104
-============================================
-*/
-
-// TODO: Fetch an array of objects from the API
-
-/*
-============================================
-Helper functions
-https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/games.html#L154
-============================================
-*/
-
-/**
- * TODO: Create a function to filter the list of item.
- * @example https://github.com/S3ak/fed-javascript1-api-calls/blob/main/examples/search-form.html#L135
- * @param {item} item The object with properties from the fetched JSON data.
- * @param {searchTerm} searchTerm The string used to check if the object title contains it.
- */
-
-/**
- * TODO: Create a function to create a DOM element.
- * @example https://github.com/S3ak/fed-javascript1-api-calls/blob/main/src/js/detail.js#L36
- * @param {item} item The object with properties from the fetched JSON data.
- */
+   
+    new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  })
+  .catch(error => console.log(error));
