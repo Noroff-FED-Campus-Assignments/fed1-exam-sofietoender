@@ -3,7 +3,7 @@ const postsPerPage = 3;
 let posts = [];
 const loader = document.querySelector("#loader");
 
-//
+
 
 async function getPosts() {
   loader.innerHTML = ` 
