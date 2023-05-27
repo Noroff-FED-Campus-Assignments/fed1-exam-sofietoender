@@ -1,9 +1,5 @@
 @import url(reset.css);
-main {
-    
-    /* padding:20px;
-    padding-top:60px; */
-}
+
 
 p {
     padding-bottom:10px;
@@ -116,13 +112,5 @@ p {
 .team-details{
     background:white;
 }
-
-}
-
-@media (min-width: 1200px) {
-
-    .our-team {
-       
-    }
 
 }
