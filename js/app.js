@@ -1,17 +1,17 @@
-// Fetch data from the WordPress API
+
 fetch('https://sofie-exam.flywheelsites.com/wp-json/wp/v2/posts/')
   .then(response => response.json())
   .then(data => {
-    // Create a slide for each post
+   
     const carouselWrapper = document.getElementById('carousel-wrapper');
     data.forEach(post => {
-      // Check if the post has a featured image
+     
       if (post.featured_media) {
-        // Fetch the featured image
+      
         fetch(`https://sofie-exam.flywheelsites.com/wp-json/wp/v2/media/${post.featured_media}`)
           .then(response => response.json())
           .then(media => {
-            // Create slide with post title, image, and read more button
+           
             const slide = document.createElement('div');
             slide.classList.add('swiper-slide');
             slide.innerHTML = `<div class=carousel-images>
@@ -25,7 +25,7 @@ fetch('https://sofie-exam.flywheelsites.com/wp-json/wp/v2/posts/')
       }
     });
 
-    // Initialize the Swiper carousel
+   
     new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: 10,
