@@ -69,7 +69,7 @@ nameEl.addEventListener("blur", (event) => {
 
   if (!minLengthRegex.test(lname)) {
     nameError.innerHTML =
-      "Name must be at least 2 characters long and must be letters only";
+      "Name must be at least 1 characters long and must be letters only";
   } else {
     nameError.innerHTML = "";
   }
@@ -109,10 +109,10 @@ subjectEl.addEventListener("blur", (event) => {
 messageEl.addEventListener("blur", (event) => {
   const message = event.target.value.trim();
 
-  const minLengthRegex = /^[a-zA-Z0-9_ ]{10,}/g;
+  const minLengthRegex = /^[a-zA-Z0-9_ ]{25,}/g;
 
   if (!minLengthRegex.test(message)) {
-    messageError.innerHTML = "Message must be at least 10 characters long";
+    messageError.innerHTML = "Message must be at least 25 characters long";
   } else {
     messageError.innerHTML = "";
   }
